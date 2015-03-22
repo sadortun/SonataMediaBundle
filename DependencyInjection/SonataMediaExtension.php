@@ -380,6 +380,7 @@ class SonataMediaExtension extends Extension
                 ->replaceArgument(0, array(
                     'secret' => $config['filesystem']['s3']['secretKey'],
                     'key'    => $config['filesystem']['s3']['accessKey'],
+                    'scheme' => $config['filesystem']['s3']['scheme'],
                 ))
             ;
         } else {

@@ -180,7 +180,7 @@ class Configuration implements ConfigurationInterface
                                         ->thenInvalid('Invalid acl permission - "%s"')
                                     ->end()
                                 ->end()
-								 ->scalarNode('scheme')
+						 ->scalarNode('scheme')
                                     ->defaultValue('https')
                                     ->validate()
                                     ->ifNotInArray(array('https', 'http'))
